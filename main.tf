@@ -1,5 +1,5 @@
 resource "null_resource" "test" {
   provisioner "local-exec" {
-    command = "env"
+    command = "env && ibmcloud target"
   }
 }
